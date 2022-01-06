@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./script.js"></script>
+</head>
+<body>
+            <div class = title >Calculator</div>
+        <table border="1">
+           <tr>
+              <td colspan="2"><input type="text" id="result" value=""/></td>
+              <!-- clr() function will call clr to clear all value -->
+              <td><input type="button" value="del" onclick="del('del')"/> </td>
+              <td><input type="button" value="c" onclick="clr()"/> </td>
+           </tr>
+           <tr>
+              <!-- create button and assign value to each button -->
+              <!-- dis("1") will call function dis to display value -->
+              <td><input type="button" value="1" id="1" onclick="displayNUM('1')"/> </td>
+              <td><input type="button" value="2"  id="2"onclick="displayNUM('2')"/> </td>
+              <td><input type="button" value="3" id="3" onclick="displayNUM('3')"/> </td>
+              <td><input type="button" value="/" onclick="displayNUM('/')"/> </td>
+           </tr>
+           <tr>
+              <td><input type="button" value="4" id ="4" onclick="displayNUM('4')"/> </td>
+              <td><input type="button" value="5" id="5" onclick="displayNUM('5')"/> </td>
+              <td><input type="button" value="6" id="6" onclick="displayNUM('6')"/> </td>
+              <td><input type="button" value="-" onclick="displayNUM('-')"/> </td>
+           </tr>
+           <tr>
+              <td><input type="button" value="7"  id="7" onclick="displayNUM('7')"/> </td>
+              <td><input type="button" value="8"  id="8" onclick="displayNUM('8')"/> </td>
+              <td><input type="button" value="9"  id="9" onclick="displayNUM('9')"/> </td>
+              <td><input type="button" value="+" onclick="displayNUM('+')"/> </td>
+           </tr>
+           <tr>
+              <td><input type="button" value="." onclick="displayNUM('.')"/> </td>
+              <td><input type="button" value="0" onclick="displayNUM('0')"/> </td>
+              <!-- solve function call function solve to evaluate value -->
+              <td><input type="button" value="=" onclick="solve()"/> </td>
+              <td><input type="button" value="*" onclick="displayNUM('*')"/> </td>
+           </tr>
+        </table>
+     
+</body>
+</html>
